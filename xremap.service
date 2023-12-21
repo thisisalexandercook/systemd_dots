@@ -1,0 +1,10 @@
+# ~/.config/systemd/user/xremap.service
+[Unit]
+Description=xremap
+
+[Service]
+Restart=on-failure
+ExecStart= bash /home/alex/.config/systemd/keymaps.sh
+
+[Install]
+WantedBy=default.target
